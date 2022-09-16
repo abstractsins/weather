@@ -1,4 +1,4 @@
 # weather app
 ## using OpenWeatherMap API
 
-### Currently fetches and logs weather and humidity for Philadelphia, PA
+### Currently fetches and logs temperature and humidity for Philadelphia, PA
