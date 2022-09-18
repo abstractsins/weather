@@ -1,0 +1,60 @@
+*, 
+html, 
+body {
+    /* border: 1px solid red; */
+
+    /** <><><> CUSTOM COLORS <><><> */
+    /* A */
+    --avocado: #568203;
+    /* B */
+    --beef-red: rgb(168, 0, 0);
+    --beef-red-2: rgb(112, 0, 0);
+    --bread: #eee1cf;
+    --bread-2: #a38047;
+    --bud-green: rgb(112, 174, 110);
+    /* C */
+    --charcoal: rgb(49, 49, 49);
+    --charcoal-2: #36454F;
+    /* D */
+    --dark-liver: rgb(72, 60, 70);
+    /* G */
+    --grape: rgb(187, 125, 231);
+    --grape2: rgb(223, 191, 245);
+    /* H */
+    --hilighter: rgb(255, 255, 0);
+    /* I */
+    --inchworm: rgb(190, 238, 98);
+    --index-card-bg: #f5e5cd;
+    --index-card-bg-2: #a59276;
+    /* L */
+    --lettuce: #CDE6A5;
+    /* M */
+    --ming: rgb(60, 110, 113);
+    /* O */
+    --ocean: #006994;
+    --ocean-2: #004d6b;
+    --orange-crayola: rgb(244, 116, 59);
+    --orange-burnt: rgb(179, 82, 44);
+    --orange-burnt-2: #833C20;
+    /* P */
+    --pink-frosting: #db7179;
+    --pink-frosting-2: #9c4d55;
+    /* S */
+    --salmon: rgb(253, 146, 134);
+    --soup: #F0CA28;
+    --soup-2: #a78d1b;
+    --shadow-color: rgba(42, 42, 42, 0.6);
+    --shadow-b-color: rgba(21, 21, 21, 0.8);
+    /** <><><> END CUSTOM COLORS <><><> */
+
+
+    /** SHADOWS */
+    --index-card-shadow-5: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.5));
+    --index-card-shadow-6: drop-shadow(4px 4px 2px rgba(95, 95, 95, 0.5));
+    /** END SHADOWS  */
+
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
