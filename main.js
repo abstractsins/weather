@@ -1,5 +1,4 @@
-import getWeather from 'fetch';
-
+import { getWeather } from './fetch.js';
 getWeather();
 
 

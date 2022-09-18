@@ -6,7 +6,7 @@ lon = `-75.1635262`;
 const call = `${url}lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`
 
 // GET
-const getWeather = async() => {
+export const getWeather = async() => {
     await fetch(call)
     .then(response => response.json())
     .then(data => {
@@ -46,7 +46,8 @@ const getWeather = async() => {
     })
 }
 
-export default getWeather;
+// export default getWeather;
+
 
 /**
  * This space intentionally left blank
