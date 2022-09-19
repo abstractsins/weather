@@ -65,6 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
 }
 
 .display {
@@ -72,14 +73,30 @@ body {
     background-color: whitesmoke;
     /* border: 3px solid black; */
     border: 5px solid var(--charcoal);
-    padding: 15px;
+    padding: 25px;
     border-radius: 15px;
-    width: 600px;
-    height: 350px;
+    width: fit-content;
+    max-width: 60%;
+    height: fit-content;
     filter: var(--shadow-1);
 }
 
 #readout {
     font-family: "Roboto Serif", Arial, Helvetica, serif;
     font-size: 42px;
+    font-weight: 400;
 }
+
+/* 750px wide */
+@media screen and (max-width: 750px)  {
+
+    #readout {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .display {
+        max-width: 90%;
+    }
+}
+/* END 750px WIDE */
