@@ -32,12 +32,16 @@ const getWeather = async() => {
             sky.isPlural = true;
         } else sky.isPlural = false;
         if (sky.isPlural) {
+            sky.desc = sky.desc.split('');
+            sky.desc.splice(0,1,sky.desc[0].toUpperCase());
+            sky.desc = sky.desc.join('')
             sky.desc += ' are';
-            sky.desc.splice(0,1,sky.desc[0].toUpperCase())
         } else sky.desc = 'A ' + sky.desc + ' is';
 
-        console.log(`The temperature right now in Philadelphia is ${temp}°F, with a humidity of ${humidity}%`);
-        console.log(`${sky.desc} expected until ${forecastEnd}`)
+        let weatherText = `The temperature right now in Philadelphia is ${temp}°F, with a humidity of ${humidity}%. \n ${sky.desc} expected until ${forecastEnd}`;
+        console.log(weatherText);
+        let readout = document.createTextNode(weatherText)
+        $('#readout').html(readout)
 
     })
     .catch(err=>{
